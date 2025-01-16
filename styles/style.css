@@ -1,0 +1,68 @@
+* {
+    --primary-color: #0196C4;
+    --secondary-color: #313A49;
+    --neutral-white: #E6E6E8;
+}
+
+.navbar {
+    background-color: var(--secondary-color);
+}
+.logo {
+    text-decoration: none;
+}
+.logo-img {
+    max-width: 70px;
+}
+
+.logo-texto {
+    color: var(--primary-color);
+}
+
+.WhatsApp {
+    background-color: rgb(5, 195, 5);
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+
+.carousel-img {
+    max-height: 600px;
+    width: auto;
+}
+
+.linea {
+    background-color: var(--primary-color);
+    height: 5px;
+    border-radius: 10px;
+}
+
+.ul-elegirnos {
+    list-style: none;
+    padding: 0;
+}
+
+.elegirnos-item {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.img-elegirnos {
+    max-width: 100%;
+}
+
+.texto-footer {
+    font-size: small;
+}
+
+@media screen and (max-width: 600px) {
+    .logo-texto {
+        display: none;
+    }
+    .img-elegirnos {
+        display: none;
+    }
+}
