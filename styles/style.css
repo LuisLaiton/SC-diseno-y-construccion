@@ -30,7 +30,7 @@
 }
 
 .carousel-img {
-    max-height: 600px;
+    max-height: 800px;
     width: auto;
 }
 
@@ -58,10 +58,38 @@
     font-size: small;
 }
 
+.servicio-img {
+    /* height: 100%; */
+    display: none;
+}
+
+.card-texto {
+    background-color: var(--primary-color);
+    transition: background-color 0.5s ease;
+}
+
+.card-servicio {
+    height: 100px;
+    transition: height 0.5s ease;
+}
+
+.card-servicio:hover {
+    height: 200px;
+}
+
+.card-texto:hover {
+    background-color:#0197c486;
+}
+.card-servicio:hover .servicio-img {
+    display: block;
+    height: 100%;
+}
+
 @media screen and (max-width: 600px) {
     .logo-texto {
         display: none;
     }
+
     .img-elegirnos {
         display: none;
     }
