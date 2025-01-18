@@ -78,6 +78,14 @@
     opacity: 1;
 }
 
+.card-formulario {
+    margin: 20px 0px;
+}
+
+.formulario {
+    width: 600px;
+}
+
 @media screen and (max-width: 600px) {
     .barra-superior {
         position: sticky;
@@ -94,5 +102,15 @@
 
     .img-elegirnos {
         display: none;
+    }
+
+    .formulario {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .formulario {
+        max-width: 300px;
     }
 }
