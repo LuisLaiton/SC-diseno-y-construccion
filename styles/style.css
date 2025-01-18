@@ -1,7 +1,7 @@
 * {
-    --primary-color: #0196C4;
-    --secondary-color: #313A49;
-    --neutral-white: #E6E6E8;
+    --primary-color: rgb(30,170,254);
+    --secondary-color: rgb(46,50,66);
+    --neutral-white: rgb(241,242,242);
 }
 
 .bg-neutral {
@@ -10,6 +10,14 @@
 
 .bg-oscuro {
     background-color: var(--secondary-color);
+}
+
+.bg-azul {
+    background-color: var(--primary-color);
+}
+
+.color-azul {
+    color: var(--primary-color);
 }
 
 .navbar {
@@ -22,10 +30,6 @@
 
 .logo-img {
     max-width: 70px;
-}
-
-.logo-texto {
-    color: var(--primary-color);
 }
 
 .WhatsApp {
@@ -96,7 +100,7 @@
         opacity: 1;
     }
 
-    .logo-texto {
+    .navbar-nombre {
         display: none;
     }
 
