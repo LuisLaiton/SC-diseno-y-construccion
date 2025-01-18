@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg pe-3 py-3 sticky-top" data-bs-theme="dark">
+    <header class="fixed-top barra-superior">
+        <nav class="navbar bg-oscuro navbar-expand-lg pe-3 py-3" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="logo" href="#">
                     <img src="assets/images/logo.svg" alt="logo" class="logo-img">
@@ -34,7 +34,22 @@
                 </div>
             </div>
         </nav>
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    </header>
+
+    <main>
+        <!-- imagen principal -->
+        <section>
+            <img src="https://placehold.co/1500x900" class="w-100" alt="...">
+        </section>
+
+        <!-- Nombre y texto -->
+        <section class="container text-center p-md-5 px-4 py-5">
+            <h1>SC Diseño y Construcción S.A.S</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus itaque.</p>
+        </section>
+
+        <!-- Carrusel -->
+        <section id="carouselExampleInterval" class="carousel slide container rounded " data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -42,26 +57,35 @@
                     aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner rounded">
                 <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="assets/images/img2.jpeg" class="d-block w-100 carousel-img" alt="...">
+                    <img src="assets/images/img2.jpeg" class="d-block w-100 carousel-img rounded" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>1 slide label</h5>
                         <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="assets/images/img3.jpeg" class="d-block w-100 carousel-img" alt="...">
+                    <img src="assets/images/img3.jpeg" class="d-block w-100 carousel-img rounded" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>2 slide label</h5>
                         <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="assets/images/img4.jpeg" class="d-block w-100 carousel-img" alt="...">
+                    <img src="assets/images/img4.jpeg" class="d-block w-100 carousel-img rounded" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>3 slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/images/img3.jpeg" class="d-block w-100 carousel-img rounded" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>4 slide label</h5>
                         <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
@@ -76,12 +100,11 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
-    </header>
-    <main class="container my-4 px-md-5 px-3">
+        </section>
+
         <!-- Por qué elegirnos -->
-        <article class="row">
-            <section class="pe-5 col d-flex flex-column justify-content-center">
+        <section class="row my-4 mx-md-5 mx-1 p-md-5">
+            <article class="px-5 col d-flex flex-column justify-content-center">
                 <h2>¿Por qué elegirnos?</h2>
                 <hr class="linea">
                 <div>
@@ -128,102 +151,92 @@
                         </li>
                     </ul>
                 </div>
-            </section>
-            <div class="col-md d-flex justify-content-center align-items-center p-0">
+            </article>
+            <div class="col-md d-flex justify-content-center align-items-center pe-lg-5">
                 <img class="img-elegirnos rounded " src="assets/images/img1.jpeg" alt="">
             </div>
-        </article>
+        </section>
 
         <!-- Nuestros servicios -->
-        <article class="mt-5">
+        <section class="p-md-5 p-3 g-neutral">
             <h2>Nuestros servicios</h2>
             <hr class="linea">
 
-            <div class="row row-cols-2 row-cols-md-3 g-md-4 g-2 text-center">
+            <div class="row row-cols-1 row-cols-md-2 g-4 p-3 p-md-5">
                 <div class="col">
-                    <div class="card text-bg-dark card-servicio">
-                        <img src="https://placehold.co/600x300" class="card-img servicio-img" alt="...">
-                        <div
-                            class="card-img-overlay d-flex flex-column justify-content-center align-items-center card-texto">
-                            <h3 class="card-title">Diseño Arquitectónico</h3>
+                    <div class="card servicio-card border-info">
+                        <div class="card-header text-center bg-info">
+                            <h4>Header</h4>
+                        </div>
+                        <div class="card">
+                            <img src="https://placehold.co/400x200" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                <p class="card-text servicios-texto">This is a wider card with supporting text below as
+                                    a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card text-bg-dark card-servicio">
-                        <img src="https://placehold.co/600x300" class="card-img servicio-img" alt="...">
-                        <div
-                            class="card-img-overlay d-flex flex-column justify-content-center align-items-center card-texto">
-                            <h3 class="card-title">Diseño Estructural</h3>
+                    <div class="card servicio-card border-info">
+                        <div class="card-header text-center bg-info">
+                            <h4>Header</h4>
+                        </div>
+                        <div class="card">
+                            <img src="https://placehold.co/400x200" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                <p class="card-text servicios-texto">This is a wider card with supporting text below as
+                                    a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card text-bg-dark card-servicio">
-                        <img src="https://placehold.co/600x300" class="card-img servicio-img" alt="...">
-                        <div
-                            class="card-img-overlay d-flex flex-column justify-content-center align-items-center card-texto">
-                            <h3 class="card-title">Estudio de Suelos</h3>
+                    <div class="card servicio-card border-info">
+                        <div class="card-header text-center bg-info">
+                            <h4>Header</h4>
+                        </div>
+                        <div class="card">
+                            <img src="https://placehold.co/400x200" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                <p class="card-text servicios-texto">This is a wider card with supporting text below as
+                                    a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card text-bg-dark card-servicio">
-                        <img src="https://placehold.co/600x300" class="card-img servicio-img" alt="...">
-                        <div
-                            class="card-img-overlay d-flex flex-column justify-content-center align-items-center card-texto">
-                            <h3 class="card-title">Levantamiento Topográfico</h3>
+                    <div class="card servicio-card border-info">
+                        <div class="card-header text-center bg-info">
+                            <h4>Header</h4>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card text-bg-dark card-servicio">
-                        <img src="https://placehold.co/600x300" class="card-img servicio-img" alt="...">
-                        <div
-                            class="card-img-overlay d-flex flex-column justify-content-center align-items-center card-texto">
-                            <h3 class="card-title">Licencias de Construcción</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card text-bg-dark card-servicio">
-                        <img src="https://placehold.co/600x300" class="card-img servicio-img" alt="...">
-                        <div
-                            class="card-img-overlay d-flex flex-column justify-content-center align-items-center card-texto">
-                            <h3 class="card-title">Modelado y Render 3D</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card text-bg-dark card-servicio">
-                        <img src="https://placehold.co/600x300" class="card-img servicio-img" alt="...">
-                        <div
-                            class="card-img-overlay d-flex flex-column justify-content-center align-items-center card-texto">
-                            <h3 class="card-title">Construcción de Obras Civiles</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card text-bg-dark card-servicio">
-                        <img src="https://placehold.co/600x300" class="card-img servicio-img" alt="...">
-                        <div
-                            class="card-img-overlay d-flex flex-column justify-content-center align-items-center card-texto">
-                            <h3 class="card-title">Interventoría de Obras</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card text-bg-dark card-servicio">
-                        <img src="https://placehold.co/600x300" class="card-img servicio-img" alt="...">
-                        <div
-                            class="card-img-overlay d-flex flex-column justify-content-center align-items-center card-texto">
-                            <h3 class="card-title">Administración Delegada</h3>
+                        <div class="card">
+                            <img src="https://placehold.co/400x200" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                <p class="card-text servicios-texto">This is a wider card with supporting text below as
+                                    a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </article>
+        </section>
+
+        <!-- Contacto -->
+        <section class="bg-oscuro p-5 d-flex">
+            <article class="d-flex flex-column justify-content-center">
+                <h4>Lorem ipsum</h4>
+                <blockquote class="instagram-media rounded"
+                    data-instgrm-permalink="https://www.instagram.com/scdisenoyconstruccion?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    data-instgrm-version="14">
+                </blockquote>
+            </article>
+            <article>
+                <form action=""></form>
+            </article>
+        </section>
     </main>
+
     <aside class="WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-whatsapp"
             viewBox="0 0 16 16">
@@ -231,7 +244,8 @@
                 d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
         </svg>
     </aside>
-    <footer class="bg-dark pt-4 pb-1 px-md-5 row">
+
+    <footer class="bg-dark pt-4 pb-1 px-md-5">
         <article class="col d-flex justify-content-center">
             <blockquote class="instagram-media"
                 data-instgrm-permalink="https://www.instagram.com/scdisenoyconstruccion?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
@@ -245,7 +259,8 @@
                     <br>
                     Carrera 8 #10-64, Oficina 08
                     <br>
-                    <a class="text-info" href="mailto:scdisenoyconstruccion4@gmail.com">scdisenoyconstruccion4@gmail.com</a>
+                    <a class="text-info"
+                        href="mailto:scdisenoyconstruccion4@gmail.com">scdisenoyconstruccion4@gmail.com</a>
                     <br>
                     @ 2025 SC Diseño y Construcción S.A.S. - todos los derechos reservados,
                     <a class="text-info text-decoration-none" href="http://" target="_blank"
