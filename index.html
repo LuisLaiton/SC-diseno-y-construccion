@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SC Diseño y Construcción S.A.S</title>
 
-    <link rel="icon" type="image/x-icon" href="assets/icons/logo2.ico">
+    <link rel="icon" href="assets/icons/logo.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
     <header class="fixed-top barra-superior">
-        <nav class="navbar bg-oscuro navbar-expand-lg pe-3 py-3" data-bs-theme="dark">
+        <nav class="navbar bg-oscuro navbar-expand-lg p-md-3" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="logo" href="#">
-                    <img src="assets/images/logo.svg" alt="logo" class="logo-img">
+                <a class="text-decoration-none d-block-inline w-50" href="#">
+                    <img src="assets/images/logo2.svg" alt="logo" class="logo-img">
                     <span class="color-azul navbar-nombre">SC Diseño y Construcción S.A.S</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,7 +30,6 @@
                     <div class="navbar-nav ">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                         <a class="nav-link" href="html/politicas.html">Políticas</a>
-                        <a class="nav-link" href="#">Pricing</a>
                     </div>
                 </div>
             </div>
@@ -39,12 +39,12 @@
     <main>
         <!-- imagen principal -->
         <section>
-            <img src="https://placehold.co/1500x900" class="w-100" alt="...">
+            <img src="assets/images/ImagenPrincipal.jpg" class="w-100" alt="...">
         </section>
 
         <!-- Nombre y texto -->
         <section class="container text-center p-md-5 px-4 py-5">
-            <h1>SC Diseño y Construcción S.A.S</h1>
+            <h1 class="color-azul">SC Diseño y Construcción S.A.S</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus itaque.</p>
         </section>
 
@@ -153,69 +153,91 @@
                 </div>
             </article>
             <div class="col-md d-flex justify-content-center align-items-center pe-lg-5">
-                <img class="img-elegirnos rounded " src="assets/images/img1.jpeg" alt="">
+                <img class="img-elegirnos rounded " src="assets/images/elegirnos.jpeg" alt="">
             </div>
         </section>
 
         <!-- Nuestros servicios -->
         <section class="p-md-5 p-3 g-neutral">
+
             <h2>Nuestros servicios</h2>
             <hr class="linea">
 
             <div class="row row-cols-1 row-cols-md-2 g-4 p-3 p-md-5">
+                <!-- Diseño y Modelado 3D -->
                 <div class="col">
-                    <div class="card servicio-card border-info">
-                        <div class="card-header text-center bg-azul">
-                            <h4>Header</h4>
-                        </div>
-                        <div class="card">
-                            <img src="https://placehold.co/400x200" class="card-img" alt="...">
-                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                                <p class="card-text servicios-texto">This is a wider card with supporting text below as
-                                    a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
+                    <div class="card border border-info servicios-card">
+                        <img src="assets/images/servicio1.jpeg" class="card-img-top" alt="Diseño y Modelado 3D">
+                        <div class="card-body bg-azul bg-opacity-10">
+                            <h4 class="card-title text-center">Diseño y Modelado 3D</h4>
+                            <p class="card-text servicios-texto">
+                                Creamos diseños arquitectónicos, estructurales, eléctricos e hidráulicos mediante
+                                modelos 3D detallados, permitiendo una visualización precisa de cada proyecto. Además,
+                                ofrecemos acompañamiento en la gestión y tramitación de licencias de construcción,
+                                asegurando que todo esté listo para iniciar la obra sin contratiempos.
+                            </p>
                         </div>
                     </div>
                 </div>
+                <!-- Construcción e Interventoría de Obras Civiles -->
                 <div class="col">
-                    <div class="card servicio-card border-info">
-                        <div class="card-header text-center bg-azul">
-                            <h4>Header</h4>
-                        </div>
-                        <div class="card">
-                            <img src="https://placehold.co/400x200" class="card-img" alt="...">
-                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                                <p class="card-text servicios-texto">This is a wider card with supporting text below as
-                                    a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
+                    <div class="card border border-info servicios-card">
+                        <img src="assets/images/servicio2.jpeg" class="card-img-top" alt="Construcción e Interventoría de Obras Civiles">
+                        <div class="card-body bg-azul bg-opacity-10 ">
+                            <h4 class="card-title text-center">Construcción e Interventoría de Obras Civiles</h4>
+                            <p class="card-text servicios-texto">
+                                Brindamos un servicio integral que incluye desde el estudio de suelos y levantamientos
+                                topográficos hasta la elaboración de presupuestos. Nos encargamos de la construcción,
+                                así como de la interventoría de obras civiles, garantizando calidad, cumplimiento de
+                                plazos y el máximo cumplimiento de las normativas de seguridad en todo momento. Además,
+                                realizamos administraciones delegadas para cuidar y proteger su patrimonio, asegurando
+                                la correcta gestión de cada proyecto.
+                            </p>
                         </div>
                     </div>
                 </div>
+                <!-- Instalaciones Especiales y Estructuras -->
                 <div class="col">
-                    <div class="card servicio-card border-info">
-                        <div class="card-header text-center bg-azul">
-                            <h4>Header</h4>
-                        </div>
-                        <div class="card">
-                            <img src="https://placehold.co/400x200" class="card-img" alt="...">
-                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                                <p class="card-text servicios-texto">This is a wider card with supporting text below as
-                                    a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
+                    <div class="card border border-info servicios-card">
+                        <img src="assets/images/servicio3.jpeg" class="card-img-top" alt="Instalaciones Especiales y Estructuras">
+                        <div class="card-body bg-azul bg-opacity-10 ">
+                            <h4 class="card-title text-center">Instalaciones Especiales y Estructuras</h4>
+                            <p class="card-text servicios-texto">
+                                Ofrecemos a nuestros clientes soluciones completas en instalaciones especiales y
+                                estructuras metálicas y de concreto. Nos especializamos en la instalación de sistemas de
+                                energía solar fotovoltaica, promoviendo el uso de energías alternativas para un futuro
+                                más sostenible. Además, ejecutamos proyectos de redes eléctricas, sistemas de
+                                climatización y telecomunicaciones, siempre garantizando la máxima calidad, seguridad y
+                                adaptabilidad a las necesidades de cada proyecto.
+                            </p>
                         </div>
                     </div>
                 </div>
+                <!-- Urbanismo e Infraestructura Vial -->
                 <div class="col">
-                    <div class="card servicio-card border-info">
-                        <div class="card-header text-center bg-azul">
-                            <h4>Header</h4>
+                    <div class="card border border-info servicios-card">
+                        <img src="assets/images/servicio4.jpeg" class="card-img-top" alt="Urbanismo e Infraestructura Vial">
+                        <div class="card-body bg-azul bg-opacity-10 ">
+                            <h4 class="card-title text-center">Urbanismo e Infraestructura Vial</h4>
+                            <p class="card-text servicios-texto">
+                                Desarrollamos proyectos de urbanismo y infraestructura vial, creando espacios urbanos
+                                sostenibles y funcionales. Nos encargamos de la planificación, diseño y ejecución de
+                                obras que mejoran la movilidad y calidad de vida en las ciudades.
+                            </p>
                         </div>
-                        <div class="card">
-                            <img src="https://placehold.co/400x200" class="card-img" alt="...">
-                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                                <p class="card-text servicios-texto">This is a wider card with supporting text below as
-                                    a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
+                    </div>
+                </div>
+                <!-- Remodelaciones y Mantenimientos de Edificios y Casas -->
+                <div class="col">
+                    <div class="card border border-info servicios-card">
+                        <img src="assets/images/servicio5.jpg" class="card-img-top" alt="Remodelaciones y Mantenimientos de Edificios y Casas">
+                        <div class="card-body bg-azul bg-opacity-10 ">
+                            <h4 class="card-title text-center">Remodelaciones y Mantenimientos de Edificios y Casas</h4>
+                            <p class="card-text servicios-texto">
+                                Renovamos y mantenemos espacios, adaptándolos a tus necesidades y mejorando su
+                                funcionalidad y estética. Desde reformas completas hasta mantenimientos periódicos,
+                                ofrecemos soluciones personalizadas para cada tipo de proyecto.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -288,8 +310,6 @@
         <div class="text-light col d-flex flex-column justify-content-end">
             <div>
                 <p class="texto-footer">
-                    Oficinas:
-                    <br>
                     Carrera 8 no. 10-64, Ubaté
                     <br>
                     Calle 189 no. 46-10, Bogotá

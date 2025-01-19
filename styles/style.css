@@ -20,18 +20,6 @@
     color: var(--primary-color);
 }
 
-.navbar {
-    opacity: 0.95;
-}
-
-.logo {
-    text-decoration: none;
-}
-
-.logo-img {
-    max-width: 70px;
-}
-
 .WhatsApp {
     background-color: rgb(5, 195, 5);
     color: white;
@@ -43,9 +31,12 @@
     right: 20px;
 }
 
-.carousel-img {
-    max-height: 600px;
-    width: auto;
+.navbar {
+    opacity: 0.95;
+}
+
+.logo-img {
+    max-width: 70px;
 }
 
 .linea {
@@ -54,40 +45,8 @@
     border-radius: 10px;
 }
 
-.ul-elegirnos {
-    list-style: none;
-    padding: 0;
-}
-
-.elegirnos-item {
-    color: var(--primary-color);
-    margin-right: 10px;
-}
-
-.img-elegirnos {
-    width: 100%;
-    max-width: 500px;
-}
-
 .texto-footer {
     font-size: small;
-}
-
-.servicios-texto {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out; 
-}
-
-.servicio-card:hover .servicios-texto {
-    opacity: 1;
-}
-
-.card-formulario {
-    margin: 20px 0px;
-}
-
-.formulario {
-    width: 600px;
 }
 
 @media screen and (max-width: 600px) {
@@ -103,18 +62,10 @@
     .navbar-nombre {
         display: none;
     }
-
-    .img-elegirnos {
-        display: none;
-    }
-
-    .formulario {
-        max-width: 100%;
-    }
 }
 
 @media screen and (max-width: 400px) {
-    .formulario {
-        max-width: 300px;
+    .logo-img {
+        max-width: 90px;
     }
 }
