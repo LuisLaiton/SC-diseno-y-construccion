@@ -1,0 +1,23 @@
+.contenido {
+    margin: 0 10%;
+}
+
+.parallax {
+    background-image: url('../assets/images/quienesSomos.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100vh; */
+}
+
+
+@media screen and (max-width: 400px) {
+    .contenido {
+        margin: 0;
+    }
+
+    .parallax {
+        background-image: url('../assets/images/elegirnos.jpeg');
+    }
+}

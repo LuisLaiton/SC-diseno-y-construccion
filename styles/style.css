@@ -1,20 +1,22 @@
 * {
-    --primary-color: #0196C4;
-    --secondary-color: #313A49;
-    --neutral-white: #E6E6E8;
+    --primary-color: rgb(30,170,254);
+    --secondary-color: rgb(46,50,66);
+    --neutral-white: rgb(241,242,242);
 }
 
-.navbar {
+.bg-neutral {
+    background-color: var(--neutral-white);
+}
+
+.bg-oscuro {
     background-color: var(--secondary-color);
 }
-.logo {
-    text-decoration: none;
-}
-.logo-img {
-    max-width: 70px;
+
+.bg-azul {
+    background-color: var(--primary-color);
 }
 
-.logo-texto {
+.color-azul {
     color: var(--primary-color);
 }
 
@@ -29,9 +31,12 @@
     right: 20px;
 }
 
-.carousel-img {
-    max-height: 800px;
-    width: auto;
+.navbar {
+    opacity: 0.95;
+}
+
+.logo-img {
+    max-width: 70px;
 }
 
 .linea {
@@ -40,57 +45,27 @@
     border-radius: 10px;
 }
 
-.ul-elegirnos {
-    list-style: none;
-    padding: 0;
-}
-
-.elegirnos-item {
-    color: var(--primary-color);
-    margin-right: 10px;
-}
-
-.img-elegirnos {
-    max-width: 100%;
-}
-
 .texto-footer {
     font-size: small;
 }
 
-.servicio-img {
-    /* height: 100%; */
-    display: none;
-}
-
-.card-texto {
-    background-color: var(--primary-color);
-    transition: background-color 0.5s ease;
-}
-
-.card-servicio {
-    height: 100px;
-    transition: height 0.5s ease;
-}
-
-.card-servicio:hover {
-    height: 200px;
-}
-
-.card-texto:hover {
-    background-color:#0197c486;
-}
-.card-servicio:hover .servicio-img {
-    display: block;
-    height: 100%;
-}
-
 @media screen and (max-width: 600px) {
-    .logo-texto {
-        display: none;
+    .barra-superior {
+        position: sticky;
     }
 
-    .img-elegirnos {
+    .navbar {
+        background-color: var(--secondary-color);
+        opacity: 1;
+    }
+
+    .navbar-nombre {
         display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logo-img {
+        max-width: 90px;
     }
 }
