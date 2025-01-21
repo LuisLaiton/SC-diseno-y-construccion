@@ -27,7 +27,7 @@
     padding: 5px;
     border-radius: 10px;
     position: fixed;
-    bottom: 10px;
+    bottom: 50px;
     right: 20px;
 }
 
@@ -40,7 +40,6 @@
 }
 
 .linea {
-    background-color: var(--primary-color);
     height: 5px;
     border-radius: 10px;
 }
@@ -51,11 +50,11 @@
 
 @media screen and (max-width: 600px) {
     .barra-superior {
+        overflow-x: hidden;
         position: sticky;
     }
 
     .navbar {
-        background-color: var(--secondary-color);
         opacity: 1;
     }
 

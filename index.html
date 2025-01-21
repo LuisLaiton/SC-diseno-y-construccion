@@ -2,10 +2,29 @@
 <html lang="en">
 
 <head>
+    <!-- SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SC Diseño y Construcción S.A.S</title>
+    <meta name="description"
+        content="SC Diseño y Construcción S.A.S. ofrece soluciones arquitectónicas y de ingeniería, enfocadas en calidad y eficiencia.">
+    <meta name="keywords"
+        content="arquitecto diseño arquitectónico, construcción, ingeniería civil, reformas, proyectos estructurales">
+    <meta name="author" content="Luis F. Laiton">
+    <meta http-equiv="Cache-Control" content="max-age=2592000">
 
+    <!-- Redes sociales -->
+    <meta property="og:title" content="SC Diseño y Construcción S.A.S.">
+    <meta property="og:description" content="Expertos en diseño arquitectónico y construcción de calidad.">
+    <meta property="og:image" content="https://luislaiton.github.io/SC-diseno-y-construccion/images/logo.png">
+    <meta property="og:url" content="https://luislaiton.github.io/SC-diseno-y-construccion/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SC Diseño y Construcción S.A.S.">
+    <meta name="twitter:description" content="Expertos en diseño arquitectónico y construcción de calidad.">
+    <meta name="twitter:image" content="https://luislaiton.github.io/SC-diseno-y-construccion/images/logo.png">
+
+    <!-- Estilos -->
     <link rel="icon" href="assets/icons/logo.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -27,8 +46,8 @@
                     <span class="navbar-toggler-icon text-light"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end text-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         <a class="nav-link" href="html/politicas.html">Políticas</a>
                     </div>
                 </div>
@@ -36,10 +55,27 @@
         </nav>
     </header>
 
+    <div class="modal" tabindex="-1" id="miModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="cerrarModal"></button>
+                <img src="assets/icons/logo3.svg" alt="" class="img-modal">
+              <h6>Haz realidad tus ideas con SC Diseño y Construcción. ¡Hablemos de tu proyecto!</h6>
+            </div>
+            <div class="d-grid col-10 mx-auto mb-3">
+                <button id="callToAction" class="btn btn-primary text-light fw-bolder" type="button">
+                    ¡ Contáctanos !
+                </button>
+              </div>
+          </div>
+        </div>
+      </div>
+
     <main>
         <!-- imagen principal -->
         <section>
-            <img src="assets/images/imagenPrincipal.jpg" class="w-100" alt="...">
+            <img src="assets/images/imagenPrincipal1.jpg" class="w-100" alt="Render principal">
         </section>
 
         <!-- Nombre y texto -->
@@ -62,52 +98,36 @@
             </div>
             <div class="carousel-inner rounded">
                 <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="assets/images/carrusel1.jpeg" class="d-block w-100 carousel-img rounded" alt="...">
-                    <!-- <div class="carousel-caption d-none d-md-block">
-                        <h5>1 slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div> -->
+                    <img src="assets/images/carrusel1.jpeg" class="d-block w-100 carousel-img rounded" alt="Compañeros de trabajo">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="assets/images/carrusel2.jpeg" class="d-block w-100 carousel-img rounded" alt="...">
-                    <!-- <div class="carousel-caption d-none d-md-block">
-                        <h5>2 slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div> -->
+                    <img src="assets/images/carrusel2.jpeg" class="d-block w-100 carousel-img rounded" alt="Trabajo en construcción">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="assets/images/carrusel3.jpeg" class="d-block w-100 carousel-img rounded" alt="...">
-                    <!-- <div class="carousel-caption d-none d-md-block">
-                        <h5>3 slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div> -->
+                    <img src="assets/images/carrusel3.jpeg" class="d-block w-100 carousel-img rounded" alt="Trabajo de construcción de un parqueadero">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="assets/images/carrusel4.jpeg" class="d-block w-100 carousel-img rounded" alt="...">
-                    <!-- <div class="carousel-caption d-none d-md-block">
-                        <h5>4 slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div> -->
+                    <img src="assets/images/carrusel4.jpeg" class="d-block w-100 carousel-img rounded" alt="Foto de la entrada de la oficina">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden">Anterior</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden">Siguiente</span>
             </button>
         </section>
 
         <!-- Por qué elegirnos -->
-        <section class="row my-4 mx-md-5 mx-1 p-md-5">
-            <article class="px-5 col d-flex flex-column justify-content-center">
+        <section class="d-flex p-md-5 bg-dark text-light">
+            <article class="ms-lg-5 px-5 py-5 col d-flex flex-column justify-content-center">
                 <h2>¿Por qué elegirnos?</h2>
-                <hr class="linea">
-                <div>
+                <hr class="linea bg-azul">
+                <div class="ms-lg-5">
                     <ul class="ul-elegirnos">
                         <li class="li-elegirnos">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -152,8 +172,8 @@
                     </ul>
                 </div>
             </article>
-            <div class="col-md d-flex justify-content-center align-items-center pe-lg-5">
-                <img class="img-elegirnos rounded " src="assets/images/elegirnos.jpeg" alt="">
+            <div class="justify-content-center align-items-center pe-lg-5 cont-img-elegirnos">
+                <img class="img-elegirnos rounded" src="assets/images/elegirnos.jpeg" alt="Busto del david de Miguel Angel">
             </div>
         </section>
 
@@ -161,7 +181,7 @@
         <section class="p-md-5 p-3 g-neutral">
 
             <h2>Nuestros servicios</h2>
-            <hr class="linea">
+            <hr class="linea bg-info">
 
             <div class="row row-cols-1 row-cols-md-2 g-4 p-3 p-md-5">
                 <!-- Diseño y Modelado 3D -->
@@ -172,11 +192,11 @@
                             <div class="carousel-inner rounded">
                                 <div class="carousel-item active" data-bs-interval="2000">
                                     <img src="assets/images/servicio1-1.jpeg" class="d-block w-100 carousel-img rounded"
-                                        alt="...">
+                                        alt="Planos de construcción">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
                                     <img src="assets/images/servicio1-2.jpg" class="d-block w-100 carousel-img rounded"
-                                        alt="...">
+                                        alt="Render de un edificio">
                                 </div>
                             </div>
                         </div>
@@ -199,11 +219,11 @@
                             <div class="carousel-inner rounded">
                                 <div class="carousel-item active" data-bs-interval="2000">
                                     <img src="assets/images/servicio2-1.jpeg" class="d-block w-100 carousel-img rounded"
-                                        alt="...">
+                                        alt="Edificio en construcción">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
                                     <img src="assets/images/servicio2-2.jpeg" class="d-block w-100 carousel-img rounded"
-                                        alt="...">
+                                        alt="Preparando el terreno de la obra">
                                 </div>
                             </div>
                         </div>
@@ -232,11 +252,11 @@
                             <div class="carousel-inner rounded">
                                 <div class="carousel-item active" data-bs-interval="2000">
                                     <img src="assets/images/servicio3-1.jpeg" class="d-block w-100 carousel-img rounded"
-                                        alt="...">
+                                        alt="Preparando las estructuras">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
                                     <img src="assets/images/servicio3-2.jpeg" class="d-block w-100 carousel-img rounded"
-                                        alt="...">
+                                        alt="Instalación de paneles solares">
                                 </div>
                             </div>
                         </div>
@@ -264,11 +284,11 @@
                             <div class="carousel-inner rounded">
                                 <div class="carousel-item active" data-bs-interval="2000">
                                     <img src="assets/images/servicio4-1.jpeg" class="d-block w-100 carousel-img rounded"
-                                        alt="...">
+                                        alt="Parque principal de Sutatausa">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
                                     <img src="assets/images/servicio4-2.jpeg" class="d-block w-100 carousel-img rounded"
-                                        alt="...">
+                                        alt="Cimentación de canchas">
                                 </div>
                             </div>
                         </div>
@@ -291,11 +311,11 @@
                             <div class="carousel-inner rounded">
                                 <div class="carousel-item active" data-bs-interval="2000">
                                     <img src="assets/images/servicio5-1.jpg" class="d-block w-100 carousel-img rounded"
-                                        alt="...">
+                                        alt="Remodelacion de restaurantes">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
                                     <img src="assets/images/servicio5-2.jpeg" class="d-block w-100 carousel-img rounded"
-                                        alt="...">
+                                        alt="Mantenimiento de una bodega">
                                 </div>
                             </div>
                         </div>
@@ -310,11 +330,40 @@
                         </div>
                     </div>
                 </div>
+                <!-- Diseño y Modelado 3D -->
+                <div class="col d-none d-md-block">
+                    <div class="card border border-info servicios-card">
+                        <div id="carouselExampleInterval" class="card-img-top carousel slide rounded "
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active" data-bs-interval="2000">
+                                    <img src="assets/images/servicio1-1.jpeg" class="d-block w-100 carousel-img rounded"
+                                        alt="Planos de construcción">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="assets/images/servicio1-2.jpg" class="d-block w-100 carousel-img rounded"
+                                        alt="Render de un edificio">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body bg-azul bg-opacity-10">
+                            <h4 class="card-title text-center">Diseño y Modelado 3D
+                                <hr class="color-azul d-xxl-none">
+                            </h4>
+                            <p class="card-text servicios-texto">
+                                Creamos diseños arquitectónicos, estructurales, eléctricos e hidráulicos mediante
+                                modelos 3D detallados, permitiendo una visualización precisa de cada proyecto. Además,
+                                ofrecemos acompañamiento en la gestión y tramitación de licencias de construcción,
+                                asegurando que todo esté listo para iniciar la obra sin contratiempos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Contacto -->
-        <section class="bg-oscuro p-5 d-flex flex-wrap justify-content-evenly text-light">
+        <section class="bg-oscuro p-3 d-flex flex-wrap justify-content-evenly text-light">
             <!-- Instagram -->
             <article class="d-flex flex-column justify-content-center">
                 <h4>Nuestros proyectos</h4>
@@ -355,7 +404,13 @@
                             </div>
 
                             <div class="btn-group-vertical w-100">
-                                <button class="btn btn-info bg-azul mt-2" type="submit">Enviar</button>
+                                <button class="btn btn-info bg-azul mt-2" type="submit">
+                                    <span id="btn-texto">Enviar</span>
+                                    <div id="btn-enviando" class="d-flex align-items-center d-none">
+                                        <strong role="status">Enviando...</strong>
+                                        <div class="spinner-border ms-auto" aria-hidden="true"></div>
+                                    </div>
+                                </button>
                                 <button class="btn btn-outline-info" type="reset">Borrar</button>
                             </div>
                         </form>
@@ -365,8 +420,8 @@
         </section>
     </main>
 
-    <aside class="WhatsApp">
-        <button id="boton-WhatsApp" class="btn">
+    <aside class="WhatsApp" id="btnWA1">
+        <button class="btn">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-whatsapp"
                 viewBox="0 0 16 16">
                 <path
@@ -375,7 +430,7 @@
         </button>
     </aside>
 
-    <footer class="bg-dark pt-4 pb-1 px-md-5">
+    <footer class="bg-dark pt-4 pb-1 px-md-5 p-3">
         <div class="text-light col d-flex flex-column justify-content-end">
             <div>
                 <p class="texto-footer">
@@ -411,7 +466,7 @@
     <script async src="//www.instagram.com/embed.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-    <script src="scripts/main.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
