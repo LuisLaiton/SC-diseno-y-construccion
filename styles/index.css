@@ -1,3 +1,6 @@
+* {
+    overflow-x: hidden;
+}
 .carousel-img {
     max-height: 600px;
     width: auto;
@@ -45,7 +48,6 @@
     width: 600px;
 }
 
-/* ejemplo */
 .modal {
     display: none; /* Oculto por defecto */
     position: fixed;
