@@ -35,7 +35,7 @@ $BTNWA1.addEventListener("click", mensajeWP);
 
 // Correo electronico
 (function () {
-    emailjs.init("67o_9CHBWxM8xNJ_o");
+    emailjs.init("pjbmETWvCWvxzJI4Y");
 })();
 
 function sendEmail(event) {
@@ -61,8 +61,8 @@ function sendEmail(event) {
     };
 
     // Configuración de EmailJS
-    const serviceID = "service_6kp9tnu";
-    const templateID = "template_cgt6ly8";
+    const serviceID = "service_3qdo6o1";
+    const templateID = "template_8zn63ox";
 
     // Enviar el correo
     emailjs.send(serviceID, templateID, templateParams)
