@@ -1,6 +1,4 @@
-* {
-    overflow-x: hidden;
-}
+
 .carousel-img {
     max-height: 600px;
     width: auto;
@@ -14,6 +12,10 @@
 .elegirnos-item {
     color: var(--primary-color);
     margin-right: 10px;
+}
+
+.cont-img-elegirnos {
+    display: flex;
 }
 
 .img-elegirnos {
@@ -70,9 +72,15 @@
     top: 5px;
     right: 5px;
 }
+@media screen and (max-width: 800px) {
+    .img-elegirnos {
+        width: 100%;
+        max-width: 300px;
+    }
+}
 
 @media screen and (max-width: 600px) {
-    .img-elegirnos {
+    .cont-img-elegirnos {
         display: none;
     }
 
